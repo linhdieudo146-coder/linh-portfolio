@@ -39,7 +39,7 @@ function App() {
       />
       <div className="hotspot cake-hotspot">
       <div className="story-popup">
-        <img src="/photos/cake.png" alt="Cake" />
+        <img src={`${import.meta.env.BASE_URL}photos/cake.png`} alt="Cake" />
         <h3>My Sweet Side</h3>
         <p>I love baking, It's my favorite way to unwind. Whenever I'm stressed, I find comfort in creating something sweet. And of course, I love sharing my creations with others!</p>
       </div>
@@ -423,3 +423,8 @@ function App() {
   )
 }
 export default App
+// update commands
+// git add .
+// git commit -m "Describe your changes"
+// git push origin main
+// npm run deploy
