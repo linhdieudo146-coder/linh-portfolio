@@ -31,7 +31,7 @@ function App() {
 
           <div className="hero-video">
             <video
-              src="/videos/video1.mp4"
+              src={`${import.meta.env.BASE_URL}videos/video1.mp4`}
               autoPlay
               loop
               muted
@@ -46,35 +46,35 @@ function App() {
       </div>
       <div className="hotspot camera-hotspot">
       <div className="story-popup">
-        <img src="/photos/camera.png" alt="Camera" />
+        <img src={`${import.meta.env.BASE_URL}photos/camera.png`} alt="Camera" />
         <h3>Through My Lens</h3>
         <p>I love capturing the little moments in my life through photography. Because of that, my phone is constantly running out of storage...</p>
       </div>
       </div>
       <div className="hotspot book-hotspot">
       <div className="story-popup">
-        <img src="/photos/book.png" alt="Book" />
+        <img src={`${import.meta.env.BASE_URL}photos/book.png`} alt="Book" />
         <h3>Between the Pages</h3>
         <p>Every book leaves me with something new to think about. I'm especially drawn to psychology, philosophy and finance.</p>
       </div>
       </div>
       <div className="hotspot global-hotspot">
       <div className="story-popup">
-        <img src="/photos/global.png" alt="Global" />
+        <img src={`${import.meta.env.BASE_URL}photos/global.png`} alt="Global" />
         <h3>Exploring the World</h3>
         <p>I've been lucky enough to explore several countries during college. My favorites are Kyoto, Japan, and Rome, Italy. Traveling has allowed me to meet people from different backgrounds, hear their stories, and see the world through new perspectives. I can't wait to explore more!</p>
       </div>
       </div>
       <div className="hotspot linh-hotspot">
       <div className="story-popup">
-        <img src="/photos/linh.png" alt="Linh" />
+        <img src={`${import.meta.env.BASE_URL}photos/linh.png`} alt="Linh" />
         <h3>About Me | Data Science Student at the University of Utah</h3>
         <p>Hi, I'm Linh! I'm born and raised in Vietnam, I moved to the United States as a teenager. Starting over in a new country taught me valuable lessons and shaped me into the person I am today. </p>
       </div>
       </div>
       <div className="hotspot art-hotspot">
       <div className="story-popup">
-        <img src="/photos/art.png" alt="Art" />
+        <img src={`${import.meta.env.BASE_URL}photos/art.png`} alt="Art" />
         <h3>Through my Palette</h3>
         <p>Art has always been my favorite way to express my creativity. I love experimenting with different colors, painting techniques, and styles.</p>
         <p className="fun-fact">Fun fact: I have my own fashion design collection!!</p>
@@ -82,7 +82,7 @@ function App() {
       </div>
       <div className="hotspot computer1-hotspot">
       <div className="story-popup">
-        <img src="/photos/computer1.png" alt="Computer1" />
+        <img src={`${import.meta.env.BASE_URL}photos/computer1.png`} alt="Computer1" />
         <h3>What Drives Me?</h3>
         <p>I didn't start in Data Science! I began in Information Systems, switched to Computer Science for a bigger challenge, and eventually discovered my passion for data.
           Now, I'm a 3rd year Data Science student at the University of Utah with a minor in Information Systems. I'm passionate about ML, data analytics, and software development.
@@ -102,28 +102,28 @@ function App() {
 
       <div className="interactive-scene">
     <img
-      src="/photos/photo3.png"
+      src={`${import.meta.env.BASE_URL}photos/photo3.png`}
       alt="My projects illustration"
       className="projects-art"
     />
 
     <div className="interactive-objects">
       <img
-        src="/photos/computer2.png"
+        src={`${import.meta.env.BASE_URL}photos/computer2.png`}
         alt="Projects"
         className="object computer"
         onClick={() => setActivePopup("projects")}
       />
 
       <img
-        src="/photos/organizer.png"
+        src={`${import.meta.env.BASE_URL}photos/organizer.png`}
         alt="Skills"
         className="object organizer"
         onClick={() => setActivePopup("skills")}
       />
 
       <img
-        src="/photos/folder.png"
+        src={`${import.meta.env.BASE_URL}photos/folder.png`}
         alt="Experience"
         className="object folder"
         onClick={() => setActivePopup("experience")}
@@ -207,7 +207,7 @@ function App() {
             <p className="experience-dates">Oct 2026</p>
             <h3>My Contributions</h3>
             <a
-              href="https://github.com/YOUR-USERNAME/YOUR-REPO"
+              href="https://github.com/linhdieudo146-coder/linh-portfolio"
               target="_blank"
               rel="noopener noreferrer"
               onClick={(e) => e.stopPropagation()}
@@ -393,7 +393,7 @@ function App() {
           Email
         </a>
         <a
-          href="/LinhElysiaResume.pdf"
+            href={`${import.meta.env.BASE_URL}LinhElysiaResume.pdf`}
           target="_blank"
           rel="noopener noreferrer"
           className="contact-button"
